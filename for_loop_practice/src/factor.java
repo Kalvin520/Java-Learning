@@ -14,7 +14,7 @@ public class factor {
         for (int i = 2; i <= n; i++) {
             while (n % i == 0) {
                 if (n == i)
-                    System.outs.println(i);
+                    System.out.println(i);
                 else
                     System.out.print(i + "*");
                 n = n / i;
