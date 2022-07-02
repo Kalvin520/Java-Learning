@@ -11,4 +11,4 @@ Java 閱讀筆記
 7. for_loop(重複敘述)
 8. while_loop(重複敘述)
 9. Array(數組)
-10. Class(類)
+10. Method(方法)
