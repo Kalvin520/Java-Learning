@@ -22,6 +22,7 @@ public class DecimalConversion {
             Decimal_system=Decimal_system/N_system;//integer Quotient
         }
         System.out.println(temp+" To "+N_system+" is: "+strn);
+        System.out.println("Bye!");
 
     }
 }
