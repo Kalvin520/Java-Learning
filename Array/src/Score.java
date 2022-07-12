@@ -18,5 +18,25 @@ public class Score {
             }
             score[j][5]=score[j][4]/3;//calculate the average
         }
+    
+        for (int j =1;j<=student;j++)//statistics failed
+            for (int k=1;k<=3;k++)
+                if (score[j][k]<60)
+                    score[j][6]++;
+
+
+        for (int j=1;j<=4;j++){//statistics average
+            for (int k=1;k<=student;k++)
+                score[student+1][j]=score[student+1][j]+score[k][j];
+            score[student+1][j]/=student;
+        }
+
+        //print
+        System.out.println("Number  Chn  Eng  Math  Total  Ave  Failed");
+        for (int i=1;i<=student+1;i++){
+            for (int j=0;j<7;j++)
+                System.out.print("  " +score[i][j] + "  ");
+            System.out.println();
+        }
     }
 }
