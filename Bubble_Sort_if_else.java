@@ -1,5 +1,5 @@
 import java.util.*;
-public class Main {
+public class Bubble_Sort_if_else {
     public static void main(String[] args) {
         int a=5,b=4,c=3,t;
 
