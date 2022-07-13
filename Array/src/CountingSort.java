@@ -1,4 +1,3 @@
-import java.util.*;
 public class CountingSort {
     public static void main(String[] args) {
         int a[]={0,77,66,99,44,55};
@@ -25,5 +24,6 @@ public class CountingSort {
         for (int i=1;i<=N;i++)
             System.out.print(b[i]+"   ");
         System.out.println();
+
     }
 }
