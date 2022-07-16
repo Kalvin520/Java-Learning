@@ -9,6 +9,7 @@ class water_bill{
         else
             money=water_degree*15.28;
     }
+
 }
 public class waterbill {
     public static void main(String[] args) {

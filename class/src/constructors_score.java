@@ -1,7 +1,13 @@
-class Pass{
+import java.sql.PseudoColumnUsage;
+
+class pass1{
     //add member
     int score;
     String result;
+
+    pass1(){ //constructors name must be same as class name
+        score=22;
+    }
 
     //Method member
     void dispose(){
@@ -10,14 +16,14 @@ class Pass{
             result="Pass";
     }
 
+
+
 }
 
-public class score {
+public class constructors_score {
 
     public static void main(String[] args) {
-        int a=88;
-        Pass pa=new Pass();//add new object
-        pa.score=a;//set object data member
+        pass1 pa=new pass1();//add new object set score=22
         pa.dispose();//implement object Method
         String b=pa.result;//retrieve data member
         System.out.println(b);
