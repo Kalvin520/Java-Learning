@@ -23,10 +23,12 @@ class Pass3{
 public class Encapsulation_Practice {
     public static void main(String[] args) {
         Pass3 ps3=new Pass3();
-        boolean c=ps3.setscore(60);
+        boolean c=ps3.setscore(-1);
         if (c){
             ps3.dispose();
             System.out.println(ps3.result);
         }
+
+
     }
 }
