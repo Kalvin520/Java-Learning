@@ -1,10 +1,10 @@
-public class e9_2g {
+public class shared_memory2 {
 	public static void main(String[] args) {
-		System.out.println(Pass3.score);//60
-		System.out.println(Pass3.dispose(88));//及格
+		System.out.println(Pass3a.score);//60
+		System.out.println(Pass3a.dispose(88));//及格
 	}
 }
-class Pass3{
+class Pass3a{
 	static int score=60;
 	static String dispose(int a) {
 		String b="不及格";

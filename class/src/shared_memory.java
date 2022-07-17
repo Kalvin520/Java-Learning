@@ -1,14 +1,14 @@
 public class shared_memory {
 	public static void main(String args[])   {
-		Pass pa1=new Pass();
+		Passqq pa1=new Passqq();
 		pa1.printNum();       //1
-	    Pass pa2=new Pass();
+	    Passqq pa2=new Passqq();
 		pa2.printNum();       //2
 	}
 }
-//class Pass{
+class Passqq{
 	static int n =0;	
-	Pass ()	{
+	Passqq ()	{
 		n++;
 	}	
 	public void printNum()		{
