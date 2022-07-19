@@ -23,6 +23,7 @@ class Pass10 extends Pass9{
         if (score>=90)
             excel="excellent";
         return excel;
+
     }
 }
 public class Inheritance_1 {
@@ -41,5 +42,6 @@ public class Inheritance_1 {
         pa9.dispose();
         b= pa9.result;
         System.out.println(b);//pass
+
     }
 }
