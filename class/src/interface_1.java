@@ -18,7 +18,6 @@ public class interface_1{
         System.out.println("result: " +ma1.result);
     }
 }
-
     //Pass 介面
 interface Pass12{
     int pc=60;
