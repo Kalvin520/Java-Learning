@@ -1,0 +1,15 @@
+server:
+  port: 9100 # ????port?
+
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:todolist # h2 database ????
+    driver-class-name: org.h2.Driver # ??driver
+    username: sa # database ???
+    password:  # database ??
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
