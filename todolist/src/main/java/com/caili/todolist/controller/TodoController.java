@@ -1,19 +1,35 @@
 package com.caili.todolist.controller;
 
-import com.caili.todolist.entity.Todo;
+import com.caili.todolist.model.entity.Todo;
 import com.caili.todolist.service.TodoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
-@RestController
+@Controller
 public class TodoController {
+
     @Autowired
-    TodoService todoService;//取得Service物件
+    TodoService todoService;
 
     @GetMapping("/todos")
-    public Iterable<Todo> getTodoList () {
-        Iterable<Todo> todoList = todoService.getTodos();
-        return todoList;
+    public String getTodos(Model model) {
+        Iterable<Todo> todoList = todoService.getTodo();
+        model.addAttribute("todolist", todoList);
+        Todo todo = new Todo();
+        model.addAttribute("todoObject", todo);
+        return "todolist";
+    }
+
+    @PostMapping("/todos")
+    public String createTodo(@ModelAttribute Todo todo, Model model) {
+        Iterable<Todo> allTodoList = todoService.createTodo(todo);
+        Todo emptyTodo = new Todo();
+        model.addAttribute("todolist", allTodoList);
+        model.addAttribute("todoObject", emptyTodo);
+        return "todolist";
     }
 }
