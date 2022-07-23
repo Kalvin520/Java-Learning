@@ -50,6 +50,7 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<!-- add junit 5 -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-api</artifactId>

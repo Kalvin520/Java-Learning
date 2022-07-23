@@ -1,11 +1,11 @@
 package com.caili.todolist.entity;
-import com.caili.todolist.model.entity.Todo;
-import org.testng.annotations.Test;
+
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestTodoEntity {
-    @org.testng.annotations.Test
+    @Test
     public void whenGetId_ThenSetId() {
         Todo todo = new Todo();
         todo.setId(1);
@@ -15,7 +15,7 @@ public class TestTodoEntity {
         assertEquals(expected, actual);
     }
 
-    @org.testng.annotations.Test
+    @Test
     public void whenGetTask_ThenSetTask() {
         Todo todo = new Todo();
         todo.setTask("洗衣服");
