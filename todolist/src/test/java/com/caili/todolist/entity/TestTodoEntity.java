@@ -1,5 +1,6 @@
 package com.caili.todolist.entity;
 
+import com.caili.todolist.model.entity.Todo;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
