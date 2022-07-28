@@ -3,7 +3,7 @@ public class catching {
         try {
             int a=6;
             int b=0;
-            System.out.println(a/b);
+            System.out.println(a/0);
         }
         catch (ArithmeticException exception){
             System.out.println("1: "+exception.getMessage());
