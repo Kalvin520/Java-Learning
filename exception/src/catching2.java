@@ -6,6 +6,7 @@ public class catching2 {
             System.out.println(a/b);
             int[] c=new int[4];
             c[5]=3;
+
         }
         catch (ArithmeticException exception){
             System.out.println("1: "+exception.getMessage());
