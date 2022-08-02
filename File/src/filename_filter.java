@@ -17,10 +17,22 @@ public class filename_filter {
         }
 
 
-        //practice
+        //practice1
         File dir2=new File("E:/file_test/stream.txt");
         long timestamp=dir2.lastModified();
         System.out.println("stream.txt file last revise time = "+new Date(timestamp));
+        //practice2
+        String c=dir2.getParent();
+//        File mm=new File(c,File.pathSeparator+"new.txt");
+//        if(dir2.renameTo(mm))
+//        {
+//            System.out.println("success!");
+//        }
+//        else
+//        {
+//            System.out.println("failed");
+//        }
+        //practice3
 
     }
 }
