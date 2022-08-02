@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.Date;
 public class filename_filter {
     public static void main(String[] args) {
         String a,b;
@@ -13,8 +14,13 @@ public class filename_filter {
                 System.out.println(s[i]+" is a dir");
             else
                 System.out.println(s[i]+" is a file");
-
-
         }
+
+
+        //practice
+        File dir2=new File("E:/file_test/stream.txt");
+        long timestamp=dir2.lastModified();
+        System.out.println("stream.txt file last revise time = "+new Date(timestamp));
+
     }
 }
