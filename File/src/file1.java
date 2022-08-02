@@ -16,5 +16,6 @@ public class file1 {
         System.out.println(fileName.canRead());
         System.out.println(fileName.canWrite());
         System.out.println(fileName.length());
+
     }
 }
