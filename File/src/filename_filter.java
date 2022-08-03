@@ -22,7 +22,7 @@ public class filename_filter {
         long timestamp=dir2.lastModified();
         System.out.println("stream.txt file last revise time = "+new Date(timestamp));
         //practice2
-        String c=dir2.getParent();
+//        String c=dir2.getParent();
 //        File mm=new File(c,File.pathSeparator+"new.txt");
 //        if(dir2.renameTo(mm))
 //        {
