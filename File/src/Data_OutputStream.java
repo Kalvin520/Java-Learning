@@ -15,7 +15,7 @@ public class Data_OutputStream {
 
         FileWriter f2=new FileWriter("test3.txt");
         BufferedWriter b1=new BufferedWriter(f2);
-        String s2="這是一本神奇的書";
+        String s2="這是神奇的書";
         b1.write(s2);
         b1.close();
     }
